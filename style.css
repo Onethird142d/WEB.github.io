@@ -1,0 +1,322 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    background-color: #f4f4f4;
+}
+
+/* Login Page Styles */
+.login-page {
+    background-image: url('登录界面无人.png');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background: rgba(228, 233, 236, 0.468);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+}
+
+.login-container h1 {
+    margin-bottom: 20px;
+}
+
+.login-container input,
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+.login-container button {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #131313;
+}
+
+/* Manga Page Styles */
+.manga-page {
+    background-image: url('登录背景.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('登录背景.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #000000;
+}
+
+
+header {
+    background-color: #000000eb;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.characters-section {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.characters-section h2 {
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.character {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.character img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+
+.character p {
+    margin: 0;
+    color: #000000;
+}
+
+/* 图片画廊的容器 home*/
+.home-page .image-gallery {
+    display: flex; /* 使用flex布局 */
+    justify-content: space-between; /* 图片之间有间隔 */
+    gap: 10px; /* 添加间距 */
+    margin-top: 20px;
+}
+
+.story h2 {
+    margin-top: -10px; /* 使home标题向上移动10px */
+}
+
+.story {
+    background-color: rgba(228, 233, 236, 0.468); /* 半透明背景 */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px; /* 每段文字间隔 */
+}
+
+/* 每个图片的样式 */
+.home-page .image-gallery img {
+    width: 30%; /* 缩小每张图片的宽度，保持合理的比例 */
+    height: auto; /* 自动调整图片高度 */
+    border-radius: 8px; /* 圆角效果 */
+    box-shadow: 0 4px 6px rgba(228, 233, 236, 0.468); /* 轻微的阴影效果 */
+}
+
+section {
+    background: rgba(228, 233, 236, 0.468);
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    text-align: center;
+}
+
+/* Introduction部分 */
+#introduction {
+    background-color: rgba(228, 233, 236, 0.468);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+
+/* General Styles for the images - Only for background.html */
+.background-page .image-gallery {
+    display: flex;
+    justify-content: space-around; /* 图片之间均匀分布 */
+    flex-wrap: wrap; /* 允许换行 */
+    gap: 20px; /* 设置图片间的间距 */
+    padding: 20px 0;
+}
+
+.background-page .image-gallery img {
+    width: 30%;  /* 设置每个图片宽度为父容器的 30% */
+    height: auto; /* 保持图片的原始比例 */
+    border-radius: 8px;  /* 添加圆角 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* 添加过渡效果 */
+}
+
+.background-page .image-gallery img:hover {
+    transform: scale(1.05); /* 悬停时略微放大图片 */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* 放大时加重阴影 */
+}
+
+/* To create a slight tilt and artistic layout */
+.background-page .image-gallery img:nth-child(odd) {
+    transform: rotate(-5deg); /* 偶数图片稍微倾斜 */
+}
+
+.background-page .image-gallery img:nth-child(even) {
+    transform: rotate(5deg); /* 奇数图片稍微倾斜 */
+}
+
+/* Gallery page specific styles */
+.gallery-page .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* 自动填充，宽度最小250px */
+    gap: 15px; /* 每个图片之间的间隔 */
+    padding: 20px;
+}
+
+.gallery-page .gallery-item {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 图片阴影 */
+    background-color: #f4f4f4; /* 背景颜色 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-page .gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* 保证图片不失真，填充区域 */
+}
+
+.gallery-page .gallery-item:hover {
+    transform: scale(1.05); /* 图片悬停时放大 */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* 放大时加重阴影 */
+}
+
+.gallery-page .gallery-item p {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.6); /* 半透明背景 */
+    color: white;
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Ensure the gallery section title is styled */
+.gallery-page #gallery-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.responsive-img {
+    width: 25%;
+    border-radius: 7px;
+    
+    top: 20px;
+    left: 20px;
+}
+
+.cover-img {
+    width: 100%; /* 保证每个封面图占满父容器的宽度 */
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+
+
+header {
+    background-color: #4a31317f; /* 导航栏背景颜色 */
+    padding: 10px 20px;
+}
+
+header h1 {
+    color: rgb(5, 5, 5);
+    text-align: center;
+    margin: 0;
+    font-size: 1.8em;
+}
+
+nav ul {
+    list-style: none; /* 移除默认的列表样式 */
+    display: flex; /* 横向排列 */
+    justify-content: center; /* 居中对齐 */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px; /* 设置导航项之间的间距 */
+}
+
+nav ul li a {
+    text-decoration: none; /* 移除下划线 */
+    color: white; /* 默认文字颜色 */
+    font-size: 1em;
+    padding: 10px 15px; /* 添加内部填充 */
+    border-radius: 5px; /* 添加圆角 */
+    transition: background-color 0.3s, color 0.3s; /* 添加过渡效果 */
+}
+
+nav ul li a:hover {
+    background-color: #346ead89; /* 悬停时的背景颜色 */
+    color: #fff; /* 悬停时的文字颜色 */
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; 
+}
+
+#gallery-section h2 {
+    margin-top: -10px; /* 使标题向上移动10px，值可以根据需求调整 */
+}
+
+#characters h2 {
+    margin-top: -10px; 
+}
+#introduction h2 {
+    margin-top: -10px; 
+}
+#background h2 {
+    margin-top: -10px; 
+}
